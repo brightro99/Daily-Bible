@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "007362f72d41e03a",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa34ae45b95025a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae5a7da5bcb20797",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "readme.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "21cd7b5f28ab6df9",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa669a7945472982",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69e6d870c24f4511",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTime"
+              }
+            }
+          },
+          {
+            "id": "0a025225d6f58fbe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dd5aa246c9be2814",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7681a6d9d4464d6c",
+    "type": "split",
+    "children": [
+      {
+        "id": "685b41d862b4bdab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fb29c75f1aca85c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "readme.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9fd9758003b88a02",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "readme.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2139fcb362d2a5b3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e7c585d14541e2db",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "readme.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "ae5a7da5bcb20797",
+  "lastOpenFiles": [
+    "에베소서/에베소서 01장.md",
+    "역대하:쉬운성경/역대하 27장.md",
+    "역대하:쉬운성경/역대하 26장.md",
+    "레위기:쉬운성경/레위기 07장.md",
+    "레위기:쉬운성경/레위기 05장.md",
+    "레위기:쉬운성경/레위기 03장.md"
+  ]
+}
