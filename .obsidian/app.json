@@ -1,1 +1,7 @@
-{}
+{
+  "showLineNumber": true,
+  "readableLineLength": false,
+  "showInlineTitle": false,
+  "promptDelete": false,
+  "showUnsupportedFiles": true
+}

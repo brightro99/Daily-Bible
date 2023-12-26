@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "aa34ae45b95025a9",
+        "id": "35dc7490a29ed50a",
         "type": "tabs",
         "children": [
           {
-            "id": "ae5a7da5bcb20797",
+            "id": "32b56698c184b131",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme.md",
+                "file": "쉬운성경/역대하/역대하 28장.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readme.md",
+                "file": "쉬운성경/역대하/역대하 28장.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "readme.md",
+                "file": "쉬운성경/역대하/역대하 28장.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,29 +125,49 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "readme.md"
+                "file": "쉬운성경/역대하/역대하 28장.md"
               }
             }
+          },
+          {
+            "id": "fb638e2302043efa",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
+      "command-palette:명령어 팔레트 열기": false,
       "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "terminal:Open terminal": false
     }
   },
-  "active": "ae5a7da5bcb20797",
+  "active": "32b56698c184b131",
   "lastOpenFiles": [
+    "쉬운성경/역대하/역대하 23장.md",
+    "쉬운성경/역대하/역대하 25장.md",
+    "쉬운성경/역대하/역대하 28장.md",
+    "쉬운성경/역대하/역대하 26장.md",
+    "쉬운성경/역대하/역대하 27장.md",
+    "쉬운성경/열왕기하/열왕기하 25장.md",
+    "무제 파일.canvas",
+    "역대하.md",
+    "2023-12-25.md",
+    "readme.md",
     "쉬운성경/출애굽기/출애굽기 40장.md",
     "쉬운성경/출애굽기/출애굽기 39장.md",
     "쉬운성경/출애굽기/출애굽기 36장.md",
@@ -165,15 +185,6 @@
     "쉬운성경/출애굽기/출애굽기 26장.md",
     "쉬운성경/출애굽기/출애굽기 25장.md",
     "쉬운성경/출애굽기/출애굽기 24장.md",
-    "쉬운성경/출애굽기/출애굽기 23장.md",
-    "쉬운성경/출애굽기/출애굽기 22장.md",
-    "쉬운성경/출애굽기/출애굽기 21장.md",
-    "쉬운성경/출애굽기/출애굽기 20장.md",
-    "쉬운성경/출애굽기/출애굽기 19장.md",
-    "쉬운성경/출애굽기/출애굽기 18장.md",
-    "쉬운성경/출애굽기/출애굽기 17장.md",
-    "쉬운성경/출애굽기/출애굽기 16장.md",
-    "쉬운성경/출애굽기/출애굽기 15장.md",
     "쉬운성경/출애굽기",
     "쉬운성경/창세기",
     "쉬운성경/잠언",
