@@ -7,12 +7,19 @@ def create_job_chapter_md(folder_name, chapter_number):
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
-    filename = os.path.join(folder_path, f"{folder_name} {chapter_number}장.md")
+    if folder_name == "시편":
+        filename = os.path.join(folder_path, f"{folder_name} {chapter_number}편.md")
+    else:
+        filename = os.path.join(folder_path, f"{folder_name} {chapter_number}장.md")
+
     if os.path.exists(filename):
         print(f"'{filename}' 파일이 이미 존재합니다.")
     else:
         with open(filename, "w") as file:
-            file.write("## {} {}장\n\n### \n".format(folder_name, chapter_number))
+            if folder_name == "시편":
+                file.write("## {} {}편\n\n### \n".format(folder_name, chapter_number))
+            else:
+                file.write("## {} {}장\n\n### \n".format(folder_name, chapter_number))
         print(f"'{filename}' 파일이 생성되었습니다.")
 
 
