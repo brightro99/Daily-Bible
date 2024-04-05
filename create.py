@@ -17,9 +17,13 @@ def create_job_chapter_md(folder_name, chapter_number):
     else:
         with open(filename, "w") as file:
             if folder_name == "시편":
-                file.write("## {} {}편\n\n### \n".format(folder_name, chapter_number))
+                file.write(
+                    "## {} {}편\n\n### \n****\n1\n".format(folder_name, chapter_number)
+                )
             else:
-                file.write("## {} {}장\n\n### \n".format(folder_name, chapter_number))
+                file.write(
+                    "## {} {}장\n\n### \n1\n".format(folder_name, chapter_number)
+                )
         print(f"'{filename}' 파일이 생성되었습니다.")
 
 
