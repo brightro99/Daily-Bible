@@ -30,7 +30,7 @@ def create_job_chapter_md(folder_name, chapter_number):
     if os.path.exists(filename):
         print(f"'{filename}' 파일이 이미 존재합니다.")
     else:
-        with open(filename, "w") as file:
+        with open(filename, "w", encoding="utf-8") as file:
             if folder_name == "시편":
                 file.write(
                     "## {} {}편\n\n### \n****\n1\n".format(folder_name, chapter_number)
