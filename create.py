@@ -1,18 +1,12 @@
 import os
 import sys
 
+
 def get_next_chapter_number(folder_name):
     folder_path = "쉬운성경/" + folder_name
-    max_number = 0
-    for filename in os.listdir(folder_path):
-        if filename.startswith(folder_name):
-            try:
-                number = int(''.join(filter(str.isdigit, filename)))
-                if number > max_number:
-                    max_number = number
-            except ValueError:
-                continue
-    return max_number + 1
+    md_list = os.listdir(folder_path)
+    return len(md_list) + 1
+
 
 def create_job_chapter_md(folder_name, chapter_number):
     folder_path = "쉬운성경/" + folder_name
@@ -56,11 +50,11 @@ def create_job_chapter_md(folder_name, chapter_number):
 
 if __name__ == "__main__":
     # if len(sys.argv) != 3:
-        # print("사용법: python3 create.py <폴더명> <장 번호>")
+    # print("사용법: python3 create.py <폴더명> <장 번호>")
     # else:
-        # folder_name = sys.argv[1]
-        # chapter_number = sys.argv[2]
-        # create_job_chapter_md(folder_name, chapter_number)
+    # folder_name = sys.argv[1]
+    # chapter_number = sys.argv[2]
+    # create_job_chapter_md(folder_name, chapter_number)
     folder_name = "예레미야"
     chapter_number = get_next_chapter_number(folder_name)
     create_job_chapter_md(folder_name, chapter_number)
