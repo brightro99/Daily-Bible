@@ -8,11 +8,13 @@ def get_next_chapter_number(folder_name):
     return len(md_list) + 1
 
 
-def create_job_chapter_md(folder_name, chapter_number):
+def create_job_chapter_md(folder_name):
     folder_path = "쉬운성경/" + folder_name
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
+    chapter_number = get_next_chapter_number(folder_name)
+    
     if folder_name == "시편":
         if int(chapter_number) < 10:
             filename = os.path.join(
@@ -55,6 +57,5 @@ if __name__ == "__main__":
     # folder_name = sys.argv[1]
     # chapter_number = sys.argv[2]
     # create_job_chapter_md(folder_name, chapter_number)
-    folder_name = "예레미야"
-    chapter_number = get_next_chapter_number(folder_name)
-    create_job_chapter_md(folder_name, chapter_number)
+    folder_name = "예레미야애가"
+    create_job_chapter_md(folder_name)
