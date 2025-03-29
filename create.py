@@ -57,5 +57,5 @@ if __name__ == "__main__":
     # folder_name = sys.argv[1]
     # chapter_number = sys.argv[2]
     # create_job_chapter_md(folder_name, chapter_number)
-    folder_name = "호세아"
+    folder_name = "요엘"
     create_job_chapter_md(folder_name)
