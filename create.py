@@ -38,7 +38,7 @@ def create_job_chapter_md(folder_name):
     if os.path.exists(filename):
         print(f"'{filename}' 파일이 이미 존재합니다.")
     else:
-        with open(filename, "w", encoding="utf-8") as file:
+        with open(filename, "w", encoding="utf-8", newline="\r\n") as file:
             if folder_name == "시편":
                 file.write(
                     "## {} {}편\n\n### \n****\n1\n".format(folder_name, chapter_number)
@@ -49,7 +49,6 @@ def create_job_chapter_md(folder_name):
                 )
         print(f"'{filename}' 파일이 생성되었습니다.")
 
-
 if __name__ == "__main__":
     # if len(sys.argv) != 3:
     # print("사용법: python3 create.py <폴더명> <장 번호>")
@@ -57,5 +56,5 @@ if __name__ == "__main__":
     # folder_name = sys.argv[1]
     # chapter_number = sys.argv[2]
     # create_job_chapter_md(folder_name, chapter_number)
-    folder_name = "미가"
+    folder_name = "나훔"
     create_job_chapter_md(folder_name)
