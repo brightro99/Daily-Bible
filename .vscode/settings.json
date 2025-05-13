@@ -29,5 +29,6 @@
     "editor.suggest.showVariables": false,
     "editor.suggest.showWords": false,
     "editor.suggest.showClasses": false,
-    "editor.suggest.showColors": false
+    "editor.suggest.showColors": false,
+    "errorLens.enabled": false
 }
