@@ -1,60 +1,73 @@
 import os
-import sys
+
+# 상위 성경 폴더
+BASE_DIR = "쉬운성경"
+# 작업할 성경 책 이름
+FOLDER_NAME = "마태복음"
 
 
-def get_next_chapter_number(folder_name):
-    folder_path = "쉬운성경/" + folder_name
-    md_list = os.listdir(folder_path)
-    return len(md_list) + 1
+def get_next_chapter_number():
+    """
+    성경 폴더 안에서 다음 생성할 장/편 번호를 계산합니다.
 
+    Returns:
+        int: 다음 장/편 번호 (1부터 시작)
+    """
+    folder_path = os.path.join(BASE_DIR, FOLDER_NAME)
 
-def create_job_chapter_md(folder_name):
-    folder_path = "쉬운성경/" + folder_name
     if not os.path.exists(folder_path):
-        os.makedirs(folder_path)
+        return 1  # 폴더가 없으면 첫 장
 
-    chapter_number = get_next_chapter_number(folder_name)
-    
-    if folder_name == "시편":
-        if int(chapter_number) < 10:
-            filename = os.path.join(
-                folder_path, f"{folder_name} 00{chapter_number}편.md"
-            )
-        elif int(chapter_number) < 100:
-            filename = os.path.join(
-                folder_path, f"{folder_name} 0{chapter_number}편.md"
-            )
-        else:
-            filename = os.path.join(folder_path, f"{folder_name} {chapter_number}편.md")
+    # .md 파일만 세어서 다음 번호 결정
+    md_files = [f for f in os.listdir(folder_path) if f.endswith(".md")]
+    return len(md_files) + 1
 
+
+def get_chapter_filename(chapter_number):
+    """
+    장/편 번호를 받아 해당 성경 파일의 전체 경로를 생성합니다.
+
+    Args:
+        chapter_number (int): 생성할 장/편 번호
+
+    Returns:
+        str: 생성된 파일의 전체 경로
+    """
+    folder_path = os.path.join(BASE_DIR, FOLDER_NAME)
+
+    if FOLDER_NAME == "시편":
+        filename = f"{FOLDER_NAME} {chapter_number:03d}편.md"
     else:
-        if int(chapter_number) < 10:
-            filename = os.path.join(
-                folder_path, f"{folder_name} 0{chapter_number}장.md"
-            )
-        else:
-            filename = os.path.join(folder_path, f"{folder_name} {chapter_number}장.md")
+        filename = f"{FOLDER_NAME} {chapter_number:02d}장.md"
 
-    if os.path.exists(filename):
-        print(f"'{filename}' 파일이 이미 존재합니다.")
-    else:
-        with open(filename, "w", encoding="utf-8", newline="\r\n") as file:
-            if folder_name == "시편":
-                file.write(
-                    "## {} {}편\n\n### \n****\n1\n".format(folder_name, chapter_number)
-                )
-            else:
-                file.write(
-                    "## {} {}장\n\n### \n1\n".format(folder_name, chapter_number)
-                )
-        print(f"'{filename}' 파일이 생성되었습니다.")
+    return os.path.join(folder_path, filename)
+
+
+def create_chapter_md():
+    """
+    지정된 성경 폴더에 새 장/편 Markdown 파일을 생성합니다.
+    폴더가 없으면 자동으로 생성하고,
+    이미 동일 파일이 있으면 생성하지 않습니다.
+    """
+    folder_path = os.path.join(BASE_DIR, FOLDER_NAME)
+    os.makedirs(folder_path, exist_ok=True)
+
+    chapter_number = get_next_chapter_number()
+    file_path = get_chapter_filename(chapter_number)
+
+    if os.path.exists(file_path):
+        print(f"⚠️ '{file_path}' 파일이 이미 존재합니다.")
+        return
+
+    # 파일 생성 및 기본 템플릿 작성
+    with open(file_path, "w", encoding="utf-8", newline="\r\n") as file:
+        if FOLDER_NAME == "시편":
+            file.write(f"## {FOLDER_NAME} {chapter_number}편\n\n### \n****\n1.\n")
+        else:
+            file.write(f"## {FOLDER_NAME} {chapter_number}장\n\n### \n1.\n")
+
+    print(f"✅ '{file_path}' 파일이 생성되었습니다.")
+
 
 if __name__ == "__main__":
-    # if len(sys.argv) != 3:
-    # print("사용법: python3 create.py <폴더명> <장 번호>")
-    # else:
-    # folder_name = sys.argv[1]
-    # chapter_number = sys.argv[2]
-    # create_job_chapter_md(folder_name, chapter_number)
-    folder_name = "마태복음"
-    create_job_chapter_md(folder_name)
+    create_chapter_md()
