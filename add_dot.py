@@ -4,7 +4,7 @@ import re
 # 상위 성경 폴더명 (고정값)
 BASE_DIR = "쉬운성경"
 # 현재 작업할 성경 책 이름
-FOLDER_NAME = "마가복음"
+FOLDER_NAME = "누가복음"
 
 
 def get_chapter_number():
