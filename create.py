@@ -3,7 +3,7 @@ import os
 # 상위 성경 폴더
 BASE_DIR = "쉬운성경"
 # 작업할 성경 책 이름
-FOLDER_NAME = "사도행전"
+FOLDER_NAME = "로마서"
 
 
 def get_next_chapter_number():
