@@ -59,7 +59,7 @@
 | 고린도후서 (2 Corinthians) | 2025.10.19 ~ 2025.10.31 | ☑️ |
 | 갈라디아서 (Galatians) | 2025.11.01 ~ 2025.11.06 | ☑️ |
 | 에베소서 (Ephesians) | 2025.11.07 ~ 2025.11.12 | ☑️ |
-| 빌립보서 (Philippians) | ~ | ⬜ |
+| 빌립보서 (Philippians) | 2025.11.13 ~ | ⬜ |
 | 골로새서 (Colossians) | ~ | ⬜ |
 | 데살로니가전서 (1 Thessalonians) | ~ | ⬜ |
 | 데살로니가후서 (2 Thessalonians) | ~ | ⬜ |
