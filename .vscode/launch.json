@@ -5,14 +5,14 @@
             "name": "Create",
             "type": "debugpy",
             "request": "launch",
-            "program": "create.py",
+            "program": "python/create.py",
             "console": "integratedTerminal"
         },
         {
             "name": "Add dot",
             "type": "debugpy",
             "request": "launch",
-            "program": "add_dot.py",
+            "program": "python/add_dot.py",
             "console": "integratedTerminal"
         }
     ]
